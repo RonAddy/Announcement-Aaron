@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>"City Of God"</title>
+</head>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+
+
+body {
+
+	background-color: gold;
+}
+header {
+	display: flex;
+}
+
+/*Logo for studio (Mirimax) that produced City of God*/
+
+#mmFilms {
+	height: 500px;
+	flex:1;
+	border: solid black;
+	background-image: url("img/logo.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat; /*so that logo does not appear twice*/
+	background-color: black;
+	margin: 5px;
+	box-shadow: 8px 8px 6px -3px black;
+
+}
+
+/*Running header for both main and gallery pages*/
+
+#comicPic {
+	width:100%;
+	height: 500px;
+	border: solid black;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	flex: 2;
+	box-shadow: 8px 8px 6px -3px black;
+}
+
+/*Parent div that contains trailer, and side info (release date)*/
+
+.panelThree {
+	border: none;
+	width: 100%;
+	height: 500px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+
+/*Youtube trailer video */ 
+
+#trailVid{
+	height: 480px;
+	flex: 2.5;
+	border: solid black;
+	margin: 5px;
+	box-shadow: 8px 8px 6px -3px black;
+
+}
+
+/*"In theaters" panel*/
+
+#panel1 {
+	height: 480px;
+	flex: 1;
+	font-family: 'Shadows Into Light', cursive;
+	color: black;
+	font-size: 25pt;
+	border: solid black;
+	background-image: url("img/front.jpg");
+	background-size: cover;
+	background-position: center;
+	margin: 5px;
+	box-shadow: 8px 8px 6px -3px black;
+}
+
+/*Release date panel*/
+
+#panel3 {
+	height: 480px;
+	flex: 1;
+	font-family: 'Shadows Into Light', cursive;
+	color: black;
+	font-size: 22pt;
+	border: solid black; /*comic book style*/
+	background-image: url("img/front.jpg");
+	background-size: cover;
+	background-position: right; /*same pic as panel 1, just to show angelica*/
+	margin: 5px;
+	box-shadow: 8px 8px 6px -3px black; 
+}
+
+/*Properties and values for the "In theaters" wordmark*/
+/*Float left beacause I am a novice with flex*/
+
+#span1 {
+  background-color: gold;
+  border:solid 3px black;
+  padding:1px 12px;
+  float: left;
+  text-decoration: underline;
+}
+
+/*Properties and values for the "Release Date" wordmark*/
+#span2 {
+  background-color: gold;
+  border:solid 3px black;
+  padding:1px 12px;
+  float: left;
+  font-style: italic;
+}
+
+/*Parent div that holds main char profiles (modals)*/
+
+.mainChar {
+	border: none;
+	width: 100%;
+	height: 500px;
+	margin: 0 auto;
+	display: flex;
+}
+
+/*Benny's picture (modal accessed through name)*/
+
+#benny {
+	height: 480px;
+	flex: 1;
+	font-family: 'Shadows Into Light', cursive;
+	color: black;
+	font-size: 22pt;
+	text-align: center;
+	border: solid black;
+	background-image: url("img/oldbenny.jpg");
+	background-size: cover;
+	background-position: right;
+	margin: 5px;
+	box-shadow: 8px 8px 6px -3px black;
+
+}
+
+/*Rocket's picture (modal accessed through name)*/
+
+#rocket {
+	height: 480px;
+	flex: 1;
+	font-family: 'Shadows Into Light', cursive;
+	color: black;
+	font-size: 22pt;
+	text-align: center;
+	border: solid black;
+	background-image: url("img/oldrocket2.png");
+	background-size: cover;
+	background-position: center;
+	margin: 5px;
+	box-shadow: 8px 8px 6px -3px black;
+}
+
+/*Li'l Ze's picture(modal accessed through name)*/
+
+#lilze {
+	height: 480px;
+	flex: 1;
+	font-family: 'Shadows Into Light', cursive;
+	color: black;
+	font-size: 22pt;
+	text-align: center;
+	border: solid black;
+	background-image: url("img/lilze.jpg");
+	background-size: cover;
+	background-position: center;
+	margin: 5px;
+	box-shadow: 8px 8px 6px -3px black;
+}
+
+/*Properties and values for main character's name plate*/
+
+.span3 {
+  background-color: red;
+  border:solid 3px black;
+  padding:1px 12px;
+  float: left;
+}
+
+
+
+#synopsis {
+
+	height: 480px;
+	font-family: 'Shadows Into Light', cursive;
+	color: white;
+	font-size: 25pt;
+	text-align: center;
+	border: solid black;
+	background-image: url("img/background.png");
+	background-size: cover;
+	background-position: center;
+	opacity: 0.9;
+	position: relative;
+	margin: 5px;
+	box-shadow: 8px 8px 6px -3px black;
+}
+
+/*Properties for synop sis title*/
+
+#spanSyn {
+
+	font-size: 40pt;
+	color: gold;
+
+}
+
+#cast {
+
+	height: 280px;
+	background-image: url("img/lastRow.jpg");
+	background-size: cover;
+	background-position: bottom;  /*Just shows feet*/
+	margin: 5px;
+	box-shadow: 8px 8px 6px -3px black;
+	border: solid black;
+
+}
+
+/*Genius way of displaying stars*/
+
+td, tr {
+
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 18pt;
+	font-style: bold;
+
+}
+</style>
+
+
+
+
+
+
+
+
+<body>
+
+	<header>
+<!-- Div displays Mirimax picture as first picture	 --> 
+		<div id="mmFilms"></div>		          
+		<img src="img/header2.png" id="comicPic"> <!--Holds header picture-->
+
+	</header>
+
+<!-- Below is navigation bar to access specific parts of page -->
+	<ul id="navBar">       
+			<li><a href="#index">HOME</a></li>
+			<li><a href="#synopsis">STORY</a></li>
+			<li><a href="#stars">STARS</a></li>
+	</ul>
+
+<!-- Panel Three div holds Youtube trailer, and release date -->
+	<div class="panelThree">
+		<div id="panel1"><span id="span1">In Theaters:</span></div>
+		<div id="trailVid"><iframe width="100%" height="480" src="https://www.youtube.com/embed/dcUOO4Itgmw" frameborder="0" allowfullscreen></iframe></div>
+		<div id="panel3"><span id="span2">Feburary 14th, 2004</span></div>
+	</div>
+
+<!-- Below div displays summary of movie -->
+	<div id="synopsis">
+		<h2><span id="spanSyn">"Story"</span></h2>
+		<p>Taking place over the course of over two decades, City of God tells the story of Cidade de Deus,Portuguese for City of God, a lower class quarter west of Rio de Janeiro. The film is told from the viewpoint of a boy named "Rocket" who grows up there as a fishmonger's son, and demonstrates the desperation and violence inherent in the slums. Two other prevelanet characters, "Benny" and "Li'l Ze", are the cities biggest drug lords and both hold two very different personalities. Based on a real story, the movie depicts drug abuse, violent crime, and a boy's struggle to free himself from the slums' grasp.
+	</div>
+
+<!-- mainChar div holds three seperate divs. These individual divs hold a modal giving a short description of the character -->
+
+	<div class="mainChar" id="stars">
+		
+		<div id="benny"><span class="span3"><a href="#modal_1">BENNY</a></span>
+			<div id="modal_1" class="modal">
+				<div>
+					<a href="#close" title="Exit" class="exit">X</a>
+					<h2>"Benny"</h2>
+					<img position="center" src="img/youngbenny.jpg"
+					<br>
+					<p>His personality? Confident and level-headed. He is easily the coolest guy in the City of God, just like they say. He is also probably the nicest. Benny has saved countless lives by talking Lil Ze out of killing people, that must count for something. He is devoted to his friends and his lover, Anjelica, and although he is faced with some tough choices, he tries to remain as righteous as a hood can.</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="lilze"><span class="span3"><a href="#modal_2">LI'L ZE</a></span>
+			<div id="modal_2" class="modal2">
+				<div>
+					<a href="#close" title="Exit" class="exit">X</a>
+					<h2>"Li'l Ze"</h2>
+					<img position="center" src="img/youngze.jpg"
+					<br>
+					<p>One of the most powerful people in the City of God, a slum in Rio de Janeiro. Lil Z controls a large portion of the drug trade in his favela – and if it wasn’t for Carrot, a rival drug dealer, Lil Z would be the only drug lord aroundPersonality, pure evil. He kills and engages in just about every criminal activity imaginable. His only redeeming characteristic is his love for his best friend Benny, but that might end up doing Benny more harm than good.</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="rocket"><span class="span3"><a href="#modal_3">ROCKET</a></span></div>
+			<div id="modal_3" class="modal3"> Modal for Rocket
+				<div>
+					<a href="#close" title="Exit" class="exit">X</a>
+					<h2>"Rocket"</h2>
+					<img position="center" src="img/youngrocket.jpg"
+					<br>
+					<p>Just like a rose in the concrete, the hero of this story is one who differs immensely from the others in the toxic environment. Rocket learned from his brother Goose about the good, bad, and ugly of being a poor hoodlum in the City of God. An aspiring photojournalist, Rocket’s intelligence and ambition to get out sets him apart in the place where he grew up. Although he’s as much a product of the City of God as any hood, he’s able to stand back and view it through a distant lens. Rocket analyzes the benefits and detriments of a life of crime, and this insight ends up being his ticket to escape.</p>
+				</div>
+			</div>
+		</div>	
+	
+	</div>
+
+<!-- Footer should have cast and names of the charaters they play -->
+
+		<div id="cast">	
+				<table>
+					<br>
+					<tr>
+						<th colspan="3">STARRING...</th>
+					</tr>
+					<tr>
+						<td>Alexandre Rodrigues</td>
+						<td>as "Rocket"</td>
+					</tr>
+					<tr>
+						<td>Leandro Firmino</td>
+						<td> as "Li'l Ze"</td>
+					</tr>
+					<tr>
+						<td>Phellipe Haagensen</td>
+						<td>as "Benny"</td>
+					</tr>
+					<tr>
+						<td>Alice Braga</td>
+						<td>as "Angelica"</td>
+					</tr>
+					<tr>
+						<td>Seu Jorge</td>
+						<td>as "Knockout Ned"</td>
+					</tr>
+				</table>
+
+		</div>
+
+	</div>
+	
+</body>
+
+<footer>
+		<a href="http://www.imdb.com/title/tt0317248/?ref_=rvi_tt"><img src="img/imdb.png">
+		<br>
+		<a href="https://www.facebook.com/CityofGod/"><img src=img/fb.png>
+		<br>
+		<img src="img/credits.gif"> 
+
+</footer>
+
+</html>
